@@ -1,0 +1,7 @@
+lr: 0.7135
+batch_size: 0.0835
+dropout: 0.0824
+seq_len: 0.0708
+nhead: 0.0254
+d_model: 0.0159
+num_layers: 0.0085
