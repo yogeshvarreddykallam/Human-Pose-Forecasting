@@ -1,0 +1,624 @@
+2025-04-23 00:24:40,071 - INFO - Using device: cuda
+2025-04-23 00:24:40,071 - INFO - Loading VPoser model from /scratch/vmm5481/CV/VPoserModelFiles/vposer_v2_05
+2025-04-23 00:24:40,784 - INFO - VPoser model loaded successfully
+2025-04-23 00:24:41,373 - INFO - Adding baseline configuration to study
+2025-04-23 00:24:41,383 - INFO - Starting optimization with 26 trials
+2025-04-23 00:24:41,427 - INFO - Trial 0: {'seq_len': 10, 'd_model': 256, 'nhead': 8, 'num_layers': 6, 'dropout': 0.1, 'batch_size': 256, 'lr': 0.0001}
+2025-04-23 00:24:41,427 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 00:24:44,970 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 00:24:44,971 - INFO - Creating sequences with window size 10...
+2025-04-23 00:24:46,272 - INFO - Created 169525 sequences. Input: torch.Size([169525, 10, 32]), Target: torch.Size([169525, 32])
+2025-04-23 00:24:46,369 - INFO - Final Dataset size: 169525 samples
+2025-04-23 00:24:46,374 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 00:24:46,763 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 00:24:46,770 - INFO - Creating sequences with window size 10...
+2025-04-23 00:24:47,020 - INFO - Created 31008 sequences. Input: torch.Size([31008, 10, 32]), Target: torch.Size([31008, 32])
+2025-04-23 00:24:47,038 - INFO - Final Dataset size: 31008 samples
+2025-04-23 00:25:07,402 - INFO - Epoch 1 | Train Loss: 0.068092 | Val Loss: 0.011148
+2025-04-23 00:25:24,323 - INFO - Epoch 2 | Train Loss: 0.012724 | Val Loss: 0.008071
+2025-04-23 00:25:41,019 - INFO - Epoch 3 | Train Loss: 0.009476 | Val Loss: 0.005634
+2025-04-23 00:25:57,815 - INFO - Epoch 4 | Train Loss: 0.007732 | Val Loss: 0.005244
+2025-04-23 00:26:14,721 - INFO - Epoch 5 | Train Loss: 0.006601 | Val Loss: 0.004500
+2025-04-23 00:26:31,640 - INFO - Epoch 6 | Train Loss: 0.005769 | Val Loss: 0.004118
+2025-04-23 00:26:48,458 - INFO - Epoch 7 | Train Loss: 0.005144 | Val Loss: 0.004137
+2025-04-23 00:27:05,193 - INFO - Epoch 8 | Train Loss: 0.004639 | Val Loss: 0.003449
+2025-04-23 00:27:21,790 - INFO - Epoch 9 | Train Loss: 0.004175 | Val Loss: 0.003552
+2025-04-23 00:27:38,636 - INFO - Epoch 10 | Train Loss: 0.003801 | Val Loss: 0.003383
+2025-04-23 00:27:55,562 - INFO - Epoch 11 | Train Loss: 0.003487 | Val Loss: 0.004541
+2025-04-23 00:28:12,586 - INFO - Epoch 12 | Train Loss: 0.003197 | Val Loss: 0.003481
+2025-04-23 00:28:29,278 - INFO - Epoch 13 | Train Loss: 0.002892 | Val Loss: 0.002589
+2025-04-23 00:28:46,092 - INFO - Epoch 14 | Train Loss: 0.002656 | Val Loss: 0.002432
+2025-04-23 00:29:02,389 - INFO - Epoch 15 | Train Loss: 0.002471 | Val Loss: 0.002371
+2025-04-23 00:29:02,467 - INFO - Trial 0 completed: val_loss=0.002371
+2025-04-23 00:29:02,545 - WARNING - Invalid combination: d_model=512, nhead=12 (not divisible)
+2025-04-23 00:29:02,570 - WARNING - Invalid combination: d_model=128, nhead=12 (not divisible)
+2025-04-23 00:29:02,593 - WARNING - Invalid combination: d_model=256, nhead=12 (not divisible)
+2025-04-23 00:29:02,624 - INFO - Trial 4: {'seq_len': 23, 'd_model': 512, 'nhead': 8, 'num_layers': 3, 'dropout': 0.37749805520425506, 'batch_size': 512, 'lr': 0.0008178740331005472}
+2025-04-23 00:29:02,624 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 00:29:06,090 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 00:29:06,090 - INFO - Creating sequences with window size 23...
+2025-04-23 00:29:07,648 - INFO - Created 169512 sequences. Input: torch.Size([169512, 23, 32]), Target: torch.Size([169512, 32])
+2025-04-23 00:29:07,747 - INFO - Final Dataset size: 169512 samples
+2025-04-23 00:29:07,747 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 00:29:08,106 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 00:29:08,106 - INFO - Creating sequences with window size 23...
+2025-04-23 00:29:08,234 - INFO - Created 30995 sequences. Input: torch.Size([30995, 23, 32]), Target: torch.Size([30995, 32])
+2025-04-23 00:29:08,250 - INFO - Final Dataset size: 30995 samples
+2025-04-23 00:29:22,424 - INFO - Epoch 1 | Train Loss: 0.044924 | Val Loss: 0.009211
+2025-04-23 00:29:35,744 - INFO - Epoch 2 | Train Loss: 0.005464 | Val Loss: 0.003282
+2025-04-23 00:29:48,928 - INFO - Epoch 3 | Train Loss: 0.002916 | Val Loss: 0.002923
+2025-04-23 00:30:02,974 - INFO - Epoch 4 | Train Loss: 0.002526 | Val Loss: 0.002037
+2025-04-23 00:30:17,089 - INFO - Epoch 5 | Train Loss: 0.002400 | Val Loss: 0.002259
+2025-04-23 00:30:30,708 - INFO - Epoch 6 | Train Loss: 0.002361 | Val Loss: 0.007427
+2025-04-23 00:30:44,293 - INFO - Epoch 7 | Train Loss: 0.747614 | Val Loss: 0.855485
+2025-04-23 00:30:57,801 - INFO - Epoch 8 | Train Loss: 0.650617 | Val Loss: 0.881059
+2025-04-23 00:30:57,801 - INFO - Early stopping triggered after 8 epochs
+2025-04-23 00:30:57,895 - INFO - Trial 4 completed: val_loss=0.002037
+2025-04-23 00:30:58,009 - INFO - Trial 5: {'seq_len': 23, 'd_model': 256, 'nhead': 16, 'num_layers': 4, 'dropout': 0.1830032278528676, 'batch_size': 256, 'lr': 0.0002686795887173863}
+2025-04-23 00:30:58,009 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 00:31:01,361 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 00:31:01,362 - INFO - Creating sequences with window size 23...
+2025-04-23 00:31:02,845 - INFO - Created 169512 sequences. Input: torch.Size([169512, 23, 32]), Target: torch.Size([169512, 32])
+2025-04-23 00:31:02,943 - INFO - Final Dataset size: 169512 samples
+2025-04-23 00:31:02,943 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 00:31:03,330 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 00:31:03,337 - INFO - Creating sequences with window size 23...
+2025-04-23 00:31:03,614 - INFO - Created 30995 sequences. Input: torch.Size([30995, 23, 32]), Target: torch.Size([30995, 32])
+2025-04-23 00:31:03,628 - INFO - Final Dataset size: 30995 samples
+2025-04-23 00:31:21,897 - INFO - Epoch 1 | Train Loss: 0.046861 | Val Loss: 0.007625
+2025-04-23 00:31:39,590 - INFO - Epoch 2 | Train Loss: 0.008634 | Val Loss: 0.004283
+2025-04-23 00:31:57,289 - INFO - Epoch 3 | Train Loss: 0.004947 | Val Loss: 0.002945
+2025-04-23 00:32:14,467 - INFO - Epoch 4 | Train Loss: 0.003327 | Val Loss: 0.002070
+2025-04-23 00:32:31,867 - INFO - Epoch 5 | Train Loss: 0.002575 | Val Loss: 0.002021
+2025-04-23 00:32:49,022 - INFO - Epoch 6 | Train Loss: 0.002192 | Val Loss: 0.001793
+2025-04-23 00:33:06,416 - INFO - Epoch 7 | Train Loss: 0.001996 | Val Loss: 0.001683
+2025-04-23 00:33:23,697 - INFO - Epoch 8 | Train Loss: 0.001877 | Val Loss: 0.001610
+2025-04-23 00:33:41,002 - INFO - Epoch 9 | Train Loss: 0.001783 | Val Loss: 0.001448
+2025-04-23 00:33:58,485 - INFO - Epoch 10 | Train Loss: 0.001732 | Val Loss: 0.001440
+2025-04-23 00:34:15,724 - INFO - Epoch 11 | Train Loss: 0.001691 | Val Loss: 0.001426
+2025-04-23 00:34:33,087 - INFO - Epoch 12 | Train Loss: 0.001650 | Val Loss: 0.001590
+2025-04-23 00:34:50,576 - INFO - Epoch 13 | Train Loss: 0.001635 | Val Loss: 0.001380
+2025-04-23 00:35:07,898 - INFO - Epoch 14 | Train Loss: 0.001597 | Val Loss: 0.001428
+2025-04-23 00:35:25,602 - INFO - Epoch 15 | Train Loss: 0.001583 | Val Loss: 0.001464
+2025-04-23 00:35:25,677 - INFO - Trial 5 completed: val_loss=0.001380
+2025-04-23 00:35:25,827 - INFO - Trial 6: {'seq_len': 29, 'd_model': 512, 'nhead': 8, 'num_layers': 7, 'dropout': 0.27373354124536764, 'batch_size': 64, 'lr': 0.0008226954571005238}
+2025-04-23 00:35:25,828 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 00:35:29,131 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 00:35:29,131 - INFO - Creating sequences with window size 29...
+2025-04-23 00:35:30,712 - INFO - Created 169506 sequences. Input: torch.Size([169506, 29, 32]), Target: torch.Size([169506, 32])
+2025-04-23 00:35:30,811 - INFO - Final Dataset size: 169506 samples
+2025-04-23 00:35:30,811 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 00:35:31,167 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 00:35:31,167 - INFO - Creating sequences with window size 29...
+2025-04-23 00:35:31,512 - INFO - Created 30989 sequences. Input: torch.Size([30989, 29, 32]), Target: torch.Size([30989, 32])
+2025-04-23 00:35:31,541 - INFO - Final Dataset size: 30989 samples
+2025-04-23 00:36:45,417 - INFO - Epoch 1 | Train Loss: 0.105252 | Val Loss: 0.028762
+2025-04-23 00:37:59,169 - INFO - Epoch 2 | Train Loss: 0.019893 | Val Loss: 0.020931
+2025-04-23 00:39:12,371 - INFO - Epoch 3 | Train Loss: 0.017098 | Val Loss: 0.019165
+2025-04-23 00:40:27,362 - INFO - Epoch 4 | Train Loss: 0.015385 | Val Loss: 0.017534
+2025-04-23 00:41:41,795 - INFO - Epoch 5 | Train Loss: 0.014525 | Val Loss: 0.015343
+2025-04-23 00:42:54,740 - INFO - Epoch 6 | Train Loss: 0.013732 | Val Loss: 0.017756
+2025-04-23 00:44:09,883 - INFO - Epoch 7 | Train Loss: 0.013187 | Val Loss: 0.015984
+2025-04-23 00:45:25,150 - INFO - Epoch 8 | Train Loss: 0.012521 | Val Loss: 0.018949
+2025-04-23 00:46:38,196 - INFO - Epoch 9 | Train Loss: 0.008588 | Val Loss: 0.014214
+2025-04-23 00:47:51,758 - INFO - Epoch 10 | Train Loss: 0.008388 | Val Loss: 0.013571
+2025-04-23 00:49:03,453 - INFO - Epoch 11 | Train Loss: 0.008127 | Val Loss: 0.011178
+2025-04-23 00:50:18,989 - INFO - Epoch 12 | Train Loss: 0.007918 | Val Loss: 0.013004
+2025-04-23 00:51:31,605 - INFO - Epoch 13 | Train Loss: 0.007814 | Val Loss: 0.011304
+2025-04-23 00:52:45,714 - INFO - Epoch 14 | Train Loss: 0.007666 | Val Loss: 0.013474
+2025-04-23 00:53:59,756 - INFO - Epoch 15 | Train Loss: 0.006217 | Val Loss: 0.009521
+2025-04-23 00:53:59,925 - INFO - Trial 6 completed: val_loss=0.009521
+2025-04-23 00:54:00,078 - INFO - Trial 7: {'seq_len': 13, 'd_model': 512, 'nhead': 8, 'num_layers': 8, 'dropout': 0.3425335077619516, 'batch_size': 64, 'lr': 0.0002051059157289977}
+2025-04-23 00:54:00,078 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 00:54:02,050 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 00:54:02,051 - INFO - Creating sequences with window size 13...
+2025-04-23 00:54:03,474 - INFO - Created 169522 sequences. Input: torch.Size([169522, 13, 32]), Target: torch.Size([169522, 32])
+2025-04-23 00:54:03,587 - INFO - Final Dataset size: 169522 samples
+2025-04-23 00:54:03,588 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 00:54:03,805 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 00:54:03,806 - INFO - Creating sequences with window size 13...
+2025-04-23 00:54:03,961 - INFO - Created 31005 sequences. Input: torch.Size([31005, 13, 32]), Target: torch.Size([31005, 32])
+2025-04-23 00:54:03,975 - INFO - Final Dataset size: 31005 samples
+2025-04-23 00:55:17,408 - INFO - Epoch 1 | Train Loss: 0.031786 | Val Loss: 0.012339
+2025-04-23 00:56:30,177 - INFO - Epoch 2 | Train Loss: 0.013573 | Val Loss: 0.008536
+2025-04-23 00:57:42,189 - INFO - Epoch 3 | Train Loss: 0.006715 | Val Loss: 0.002558
+2025-04-23 00:58:59,587 - INFO - Epoch 4 | Train Loss: 0.003019 | Val Loss: 0.001701
+2025-04-23 01:00:12,290 - INFO - Epoch 5 | Train Loss: 0.002388 | Val Loss: 0.002039
+2025-04-23 01:01:24,517 - INFO - Epoch 6 | Train Loss: 0.002175 | Val Loss: 0.001763
+2025-04-23 01:02:38,724 - INFO - Epoch 7 | Train Loss: 0.002038 | Val Loss: 0.002352
+2025-04-23 01:03:50,918 - INFO - Epoch 8 | Train Loss: 0.001678 | Val Loss: 0.001371
+2025-04-23 01:05:10,193 - INFO - Epoch 9 | Train Loss: 0.001639 | Val Loss: 0.001342
+2025-04-23 01:06:24,882 - INFO - Epoch 10 | Train Loss: 0.001625 | Val Loss: 0.001377
+2025-04-23 01:07:42,749 - INFO - Epoch 11 | Train Loss: 0.001598 | Val Loss: 0.001401
+2025-04-23 01:09:00,789 - INFO - Epoch 12 | Train Loss: 0.001587 | Val Loss: 0.001502
+2025-04-23 01:10:14,253 - INFO - Epoch 13 | Train Loss: 0.001439 | Val Loss: 0.001337
+2025-04-23 01:11:31,141 - INFO - Epoch 14 | Train Loss: 0.001429 | Val Loss: 0.001276
+2025-04-23 01:12:46,404 - INFO - Epoch 15 | Train Loss: 0.001426 | Val Loss: 0.001562
+2025-04-23 01:12:46,671 - INFO - Trial 7 completed: val_loss=0.001276
+2025-04-23 01:12:46,801 - INFO - Trial 8: {'seq_len': 43, 'd_model': 128, 'nhead': 16, 'num_layers': 3, 'dropout': 0.4051941555041648, 'batch_size': 128, 'lr': 1.951731620459219e-05}
+2025-04-23 01:12:46,801 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 01:12:48,844 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 01:12:48,845 - INFO - Creating sequences with window size 43...
+2025-04-23 01:12:50,892 - INFO - Created 169492 sequences. Input: torch.Size([169492, 43, 32]), Target: torch.Size([169492, 32])
+2025-04-23 01:12:51,002 - INFO - Final Dataset size: 169492 samples
+2025-04-23 01:12:51,003 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 01:12:51,318 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 01:12:51,319 - INFO - Creating sequences with window size 43...
+2025-04-23 01:12:51,534 - INFO - Created 30975 sequences. Input: torch.Size([30975, 43, 32]), Target: torch.Size([30975, 32])
+2025-04-23 01:12:51,549 - INFO - Final Dataset size: 30975 samples
+2025-04-23 01:13:14,107 - INFO - Epoch 1 | Train Loss: 0.404513 | Val Loss: 0.175187
+2025-04-23 01:13:37,076 - INFO - Epoch 2 | Train Loss: 0.133161 | Val Loss: 0.056565
+2025-04-23 01:14:00,431 - INFO - Epoch 3 | Train Loss: 0.069198 | Val Loss: 0.028005
+2025-04-23 01:14:23,782 - INFO - Epoch 4 | Train Loss: 0.044092 | Val Loss: 0.016905
+2025-04-23 01:14:47,060 - INFO - Epoch 5 | Train Loss: 0.030630 | Val Loss: 0.011117
+2025-04-23 01:15:09,570 - INFO - Epoch 6 | Train Loss: 0.022127 | Val Loss: 0.007823
+2025-04-23 01:15:32,410 - INFO - Epoch 7 | Train Loss: 0.016393 | Val Loss: 0.006016
+2025-04-23 01:15:55,761 - INFO - Epoch 8 | Train Loss: 0.012345 | Val Loss: 0.004762
+2025-04-23 01:16:18,835 - INFO - Epoch 9 | Train Loss: 0.009476 | Val Loss: 0.003979
+2025-04-23 01:16:43,118 - INFO - Epoch 10 | Train Loss: 0.007432 | Val Loss: 0.003308
+2025-04-23 01:17:06,733 - INFO - Epoch 11 | Train Loss: 0.005959 | Val Loss: 0.002937
+2025-04-23 01:17:30,548 - INFO - Epoch 12 | Train Loss: 0.004920 | Val Loss: 0.002669
+2025-04-23 01:17:54,595 - INFO - Epoch 13 | Train Loss: 0.004174 | Val Loss: 0.002270
+2025-04-23 01:18:18,651 - INFO - Epoch 14 | Train Loss: 0.003640 | Val Loss: 0.002168
+2025-04-23 01:18:41,495 - INFO - Epoch 15 | Train Loss: 0.003249 | Val Loss: 0.001989
+2025-04-23 01:18:41,523 - INFO - Trial 8 completed: val_loss=0.001989
+2025-04-23 01:18:41,740 - INFO - Trial 9: {'seq_len': 41, 'd_model': 256, 'nhead': 16, 'num_layers': 2, 'dropout': 0.40932217094051704, 'batch_size': 128, 'lr': 2.7693617035200807e-05}
+2025-04-23 01:18:41,740 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 01:18:43,703 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 01:18:43,704 - INFO - Creating sequences with window size 41...
+2025-04-23 01:18:45,441 - INFO - Created 169494 sequences. Input: torch.Size([169494, 41, 32]), Target: torch.Size([169494, 32])
+2025-04-23 01:18:45,557 - INFO - Final Dataset size: 169494 samples
+2025-04-23 01:18:45,557 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 01:18:45,775 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 01:18:45,775 - INFO - Creating sequences with window size 41...
+2025-04-23 01:18:46,169 - INFO - Created 30977 sequences. Input: torch.Size([30977, 41, 32]), Target: torch.Size([30977, 32])
+2025-04-23 01:18:46,183 - INFO - Final Dataset size: 30977 samples
+2025-04-23 01:19:06,455 - INFO - Epoch 1 | Train Loss: 0.181205 | Val Loss: 0.021797
+2025-04-23 01:19:26,580 - INFO - Epoch 2 | Train Loss: 0.029939 | Val Loss: 0.007451
+2025-04-23 01:19:46,825 - INFO - Epoch 3 | Train Loss: 0.014628 | Val Loss: 0.004002
+2025-04-23 01:20:07,749 - INFO - Epoch 4 | Train Loss: 0.007960 | Val Loss: 0.002586
+2025-04-23 01:20:28,362 - INFO - Epoch 5 | Train Loss: 0.004845 | Val Loss: 0.002096
+2025-04-23 01:20:48,411 - INFO - Epoch 6 | Train Loss: 0.003462 | Val Loss: 0.001813
+2025-04-23 01:21:08,754 - INFO - Epoch 7 | Train Loss: 0.002833 | Val Loss: 0.001722
+2025-04-23 01:21:29,355 - INFO - Epoch 8 | Train Loss: 0.002512 | Val Loss: 0.001534
+2025-04-23 01:21:49,150 - INFO - Epoch 9 | Train Loss: 0.002319 | Val Loss: 0.001451
+2025-04-23 01:22:09,035 - INFO - Epoch 10 | Train Loss: 0.002186 | Val Loss: 0.001463
+2025-04-23 01:22:29,129 - INFO - Epoch 11 | Train Loss: 0.002091 | Val Loss: 0.001394
+2025-04-23 01:22:48,754 - INFO - Epoch 12 | Train Loss: 0.002018 | Val Loss: 0.001466
+2025-04-23 01:23:08,947 - INFO - Epoch 13 | Train Loss: 0.001964 | Val Loss: 0.001360
+2025-04-23 01:23:28,749 - INFO - Epoch 14 | Train Loss: 0.001914 | Val Loss: 0.001375
+2025-04-23 01:23:48,667 - INFO - Epoch 15 | Train Loss: 0.001873 | Val Loss: 0.001373
+2025-04-23 01:23:48,708 - INFO - Trial 9 completed: val_loss=0.001360
+2025-04-23 01:23:48,937 - INFO - Trial 10: {'seq_len': 5, 'd_model': 512, 'nhead': 4, 'num_layers': 8, 'dropout': 0.49219872241020995, 'batch_size': 64, 'lr': 9.42731083453099e-05}
+2025-04-23 01:23:48,938 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 01:23:52,389 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 01:23:52,390 - INFO - Creating sequences with window size 5...
+2025-04-23 01:23:54,301 - INFO - Created 169530 sequences. Input: torch.Size([169530, 5, 32]), Target: torch.Size([169530, 32])
+2025-04-23 01:23:54,475 - INFO - Final Dataset size: 169530 samples
+2025-04-23 01:23:54,476 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 01:23:54,883 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 01:23:54,883 - INFO - Creating sequences with window size 5...
+2025-04-23 01:23:55,091 - INFO - Created 31013 sequences. Input: torch.Size([31013, 5, 32]), Target: torch.Size([31013, 32])
+2025-04-23 01:23:55,117 - INFO - Final Dataset size: 31013 samples
+2025-04-23 01:25:12,305 - INFO - Epoch 1 | Train Loss: 0.058943 | Val Loss: 0.013991
+2025-04-23 01:26:38,258 - INFO - Epoch 2 | Train Loss: 0.021083 | Val Loss: 0.007928
+2025-04-23 01:27:58,868 - INFO - Epoch 3 | Train Loss: 0.011687 | Val Loss: 0.004999
+2025-04-23 01:29:21,417 - INFO - Epoch 4 | Train Loss: 0.005546 | Val Loss: 0.002354
+2025-04-23 01:30:43,775 - INFO - Epoch 5 | Train Loss: 0.003553 | Val Loss: 0.001988
+2025-04-23 01:32:05,765 - INFO - Epoch 6 | Train Loss: 0.002949 | Val Loss: 0.001760
+2025-04-23 01:33:33,400 - INFO - Epoch 7 | Train Loss: 0.002637 | Val Loss: 0.001638
+2025-04-23 01:35:00,169 - INFO - Epoch 8 | Train Loss: 0.002461 | Val Loss: 0.001573
+2025-04-23 01:36:20,264 - INFO - Epoch 9 | Train Loss: 0.002321 | Val Loss: 0.001626
+2025-04-23 01:37:39,570 - INFO - Epoch 10 | Train Loss: 0.002235 | Val Loss: 0.001585
+2025-04-23 01:39:01,621 - INFO - Epoch 11 | Train Loss: 0.002110 | Val Loss: 0.001557
+2025-04-23 01:40:19,235 - INFO - Epoch 12 | Train Loss: 0.002040 | Val Loss: 0.001427
+2025-04-23 01:41:37,115 - INFO - Epoch 13 | Train Loss: 0.001988 | Val Loss: 0.001521
+2025-04-23 01:42:54,218 - INFO - Epoch 14 | Train Loss: 0.001931 | Val Loss: 0.001453
+2025-04-23 01:44:15,696 - INFO - Epoch 15 | Train Loss: 0.001878 | Val Loss: 0.001463
+2025-04-23 01:44:16,010 - INFO - Trial 10 completed: val_loss=0.001427
+2025-04-23 01:44:16,126 - INFO - Trial 11: {'seq_len': 48, 'd_model': 256, 'nhead': 4, 'num_layers': 2, 'dropout': 0.3417818919084553, 'batch_size': 128, 'lr': 1.5185380749976347e-05}
+2025-04-23 01:44:16,126 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 01:44:19,707 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 01:44:19,708 - INFO - Creating sequences with window size 48...
+2025-04-23 01:44:21,667 - INFO - Created 169487 sequences. Input: torch.Size([169487, 48, 32]), Target: torch.Size([169487, 32])
+2025-04-23 01:44:21,774 - INFO - Final Dataset size: 169487 samples
+2025-04-23 01:44:21,775 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 01:44:22,119 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 01:44:22,119 - INFO - Creating sequences with window size 48...
+2025-04-23 01:44:22,357 - INFO - Created 30970 sequences. Input: torch.Size([30970, 48, 32]), Target: torch.Size([30970, 32])
+2025-04-23 01:44:22,373 - INFO - Final Dataset size: 30970 samples
+2025-04-23 01:44:43,115 - INFO - Epoch 1 | Train Loss: 0.245307 | Val Loss: 0.041215
+2025-04-23 01:45:04,305 - INFO - Epoch 2 | Train Loss: 0.048331 | Val Loss: 0.014795
+2025-04-23 01:45:24,859 - INFO - Epoch 3 | Train Loss: 0.027160 | Val Loss: 0.008189
+2025-04-23 01:45:45,374 - INFO - Epoch 4 | Train Loss: 0.017800 | Val Loss: 0.005399
+2025-04-23 01:46:05,558 - INFO - Epoch 5 | Train Loss: 0.012339 | Val Loss: 0.004072
+2025-04-23 01:46:26,039 - INFO - Epoch 6 | Train Loss: 0.008849 | Val Loss: 0.003310
+2025-04-23 01:46:46,963 - INFO - Epoch 7 | Train Loss: 0.006501 | Val Loss: 0.002669
+2025-04-23 01:47:08,317 - INFO - Epoch 8 | Train Loss: 0.004958 | Val Loss: 0.002422
+2025-04-23 01:47:28,548 - INFO - Epoch 9 | Train Loss: 0.003949 | Val Loss: 0.002093
+2025-04-23 01:47:48,051 - INFO - Epoch 10 | Train Loss: 0.003299 | Val Loss: 0.001965
+2025-04-23 01:48:07,853 - INFO - Epoch 11 | Train Loss: 0.002881 | Val Loss: 0.001782
+2025-04-23 01:48:28,047 - INFO - Epoch 12 | Train Loss: 0.002609 | Val Loss: 0.001709
+2025-04-23 01:48:48,217 - INFO - Epoch 13 | Train Loss: 0.002423 | Val Loss: 0.001795
+2025-04-23 01:49:08,658 - INFO - Epoch 14 | Train Loss: 0.002289 | Val Loss: 0.001623
+2025-04-23 01:49:28,903 - INFO - Epoch 15 | Train Loss: 0.002193 | Val Loss: 0.001616
+2025-04-23 01:49:28,944 - INFO - Trial 11 completed: val_loss=0.001616
+2025-04-23 01:49:29,276 - INFO - Trial 12: {'seq_len': 37, 'd_model': 512, 'nhead': 16, 'num_layers': 5, 'dropout': 0.45841776237280063, 'batch_size': 128, 'lr': 5.180287841960642e-05}
+2025-04-23 01:49:29,276 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 01:49:31,198 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 01:49:31,199 - INFO - Creating sequences with window size 37...
+2025-04-23 01:49:33,629 - INFO - Created 169498 sequences. Input: torch.Size([169498, 37, 32]), Target: torch.Size([169498, 32])
+2025-04-23 01:49:33,730 - INFO - Final Dataset size: 169498 samples
+2025-04-23 01:49:33,731 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 01:49:33,996 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 01:49:33,996 - INFO - Creating sequences with window size 37...
+2025-04-23 01:49:34,196 - INFO - Created 30981 sequences. Input: torch.Size([30981, 37, 32]), Target: torch.Size([30981, 32])
+2025-04-23 01:49:34,210 - INFO - Final Dataset size: 30981 samples
+2025-04-23 01:50:16,454 - INFO - Epoch 1 | Train Loss: 0.065877 | Val Loss: 0.009292
+2025-04-23 01:50:57,972 - INFO - Epoch 2 | Train Loss: 0.018387 | Val Loss: 0.006020
+2025-04-23 01:51:39,822 - INFO - Epoch 3 | Train Loss: 0.012327 | Val Loss: 0.004783
+2025-04-23 01:52:21,600 - INFO - Epoch 4 | Train Loss: 0.008187 | Val Loss: 0.003244
+2025-04-23 01:53:03,406 - INFO - Epoch 5 | Train Loss: 0.005301 | Val Loss: 0.002402
+2025-04-23 01:53:45,169 - INFO - Epoch 6 | Train Loss: 0.003720 | Val Loss: 0.001902
+2025-04-23 01:54:27,649 - INFO - Epoch 7 | Train Loss: 0.002949 | Val Loss: 0.001588
+2025-04-23 01:55:09,503 - INFO - Epoch 8 | Train Loss: 0.002536 | Val Loss: 0.001477
+2025-04-23 01:55:51,250 - INFO - Epoch 9 | Train Loss: 0.002290 | Val Loss: 0.001347
+2025-04-23 01:56:32,814 - INFO - Epoch 10 | Train Loss: 0.002129 | Val Loss: 0.001306
+2025-04-23 01:57:14,685 - INFO - Epoch 11 | Train Loss: 0.002007 | Val Loss: 0.001280
+2025-04-23 01:57:56,362 - INFO - Epoch 12 | Train Loss: 0.001926 | Val Loss: 0.001216
+2025-04-23 01:58:38,323 - INFO - Epoch 13 | Train Loss: 0.001840 | Val Loss: 0.001177
+2025-04-23 01:59:19,670 - INFO - Epoch 14 | Train Loss: 0.001788 | Val Loss: 0.001154
+2025-04-23 02:00:01,356 - INFO - Epoch 15 | Train Loss: 0.001747 | Val Loss: 0.001205
+2025-04-23 02:00:01,510 - INFO - Trial 12 completed: val_loss=0.001154
+2025-04-23 02:00:01,722 - INFO - Trial 13: {'seq_len': 37, 'd_model': 512, 'nhead': 8, 'num_layers': 5, 'dropout': 0.49429880820665417, 'batch_size': 64, 'lr': 6.500825717604397e-05}
+2025-04-23 02:00:01,722 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 02:00:05,112 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 02:00:05,112 - INFO - Creating sequences with window size 37...
+2025-04-23 02:00:06,985 - INFO - Created 169498 sequences. Input: torch.Size([169498, 37, 32]), Target: torch.Size([169498, 32])
+2025-04-23 02:00:07,101 - INFO - Final Dataset size: 169498 samples
+2025-04-23 02:00:07,102 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 02:00:07,490 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 02:00:07,490 - INFO - Creating sequences with window size 37...
+2025-04-23 02:00:07,826 - INFO - Created 30981 sequences. Input: torch.Size([30981, 37, 32]), Target: torch.Size([30981, 32])
+2025-04-23 02:00:07,841 - INFO - Final Dataset size: 30981 samples
+2025-04-23 02:01:07,339 - INFO - Epoch 1 | Train Loss: 0.049495 | Val Loss: 0.007616
+2025-04-23 02:02:06,594 - INFO - Epoch 2 | Train Loss: 0.013885 | Val Loss: 0.003966
+2025-04-23 02:03:08,200 - INFO - Epoch 3 | Train Loss: 0.006154 | Val Loss: 0.002118
+2025-04-23 02:04:10,951 - INFO - Epoch 4 | Train Loss: 0.003355 | Val Loss: 0.001769
+2025-04-23 02:05:11,673 - INFO - Epoch 5 | Train Loss: 0.002558 | Val Loss: 0.001596
+2025-04-23 02:06:14,309 - INFO - Epoch 6 | Train Loss: 0.002250 | Val Loss: 0.001438
+2025-04-23 02:07:15,552 - INFO - Epoch 7 | Train Loss: 0.002059 | Val Loss: 0.001467
+2025-04-23 02:08:15,168 - INFO - Epoch 8 | Train Loss: 0.001942 | Val Loss: 0.001546
+2025-04-23 02:09:16,801 - INFO - Epoch 9 | Train Loss: 0.001866 | Val Loss: 0.001878
+2025-04-23 02:10:16,918 - INFO - Epoch 10 | Train Loss: 0.001645 | Val Loss: 0.001743
+2025-04-23 02:10:16,919 - INFO - Early stopping triggered after 10 epochs
+2025-04-23 02:10:17,114 - INFO - Trial 13 completed: val_loss=0.001438
+2025-04-23 02:10:17,341 - WARNING - Invalid combination: d_model=512, nhead=12 (not divisible)
+2025-04-23 02:10:17,407 - INFO - Trial 15: {'seq_len': 14, 'd_model': 512, 'nhead': 4, 'num_layers': 6, 'dropout': 0.2926779884325846, 'batch_size': 512, 'lr': 0.00024436166758654254}
+2025-04-23 02:10:17,407 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 02:10:20,721 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 02:10:20,722 - INFO - Creating sequences with window size 14...
+2025-04-23 02:10:22,039 - INFO - Created 169521 sequences. Input: torch.Size([169521, 14, 32]), Target: torch.Size([169521, 32])
+2025-04-23 02:10:22,141 - INFO - Final Dataset size: 169521 samples
+2025-04-23 02:10:22,141 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 02:10:22,521 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 02:10:22,521 - INFO - Creating sequences with window size 14...
+2025-04-23 02:10:22,776 - INFO - Created 31004 sequences. Input: torch.Size([31004, 14, 32]), Target: torch.Size([31004, 32])
+2025-04-23 02:10:22,793 - INFO - Final Dataset size: 31004 samples
+2025-04-23 02:10:39,936 - INFO - Epoch 1 | Train Loss: 0.052871 | Val Loss: 0.010303
+2025-04-23 02:10:56,189 - INFO - Epoch 2 | Train Loss: 0.013913 | Val Loss: 0.007747
+2025-04-23 02:11:12,664 - INFO - Epoch 3 | Train Loss: 0.010522 | Val Loss: 0.007449
+2025-04-23 02:11:28,784 - INFO - Epoch 4 | Train Loss: 0.008859 | Val Loss: 0.006369
+2025-04-23 02:11:45,263 - INFO - Epoch 5 | Train Loss: 0.007594 | Val Loss: 0.005775
+2025-04-23 02:12:01,708 - INFO - Epoch 6 | Train Loss: 0.006605 | Val Loss: 0.005261
+2025-04-23 02:12:17,855 - INFO - Epoch 7 | Train Loss: 0.005535 | Val Loss: 0.004196
+2025-04-23 02:12:34,389 - INFO - Epoch 8 | Train Loss: 0.004559 | Val Loss: 0.003702
+2025-04-23 02:12:50,730 - INFO - Epoch 9 | Train Loss: 0.003655 | Val Loss: 0.003043
+2025-04-23 02:13:07,569 - INFO - Epoch 10 | Train Loss: 0.002980 | Val Loss: 0.002461
+2025-04-23 02:13:24,079 - INFO - Epoch 11 | Train Loss: 0.002589 | Val Loss: 0.002192
+2025-04-23 02:13:40,739 - INFO - Epoch 12 | Train Loss: 0.002305 | Val Loss: 0.001791
+2025-04-23 02:13:57,202 - INFO - Epoch 13 | Train Loss: 0.002148 | Val Loss: 0.001726
+2025-04-23 02:14:13,945 - INFO - Epoch 14 | Train Loss: 0.002013 | Val Loss: 0.001716
+2025-04-23 02:14:30,245 - INFO - Epoch 15 | Train Loss: 0.001939 | Val Loss: 0.001660
+2025-04-23 02:14:30,416 - INFO - Trial 15 completed: val_loss=0.001660
+2025-04-23 02:14:30,536 - INFO - Trial 16: {'seq_len': 50, 'd_model': 512, 'nhead': 16, 'num_layers': 8, 'dropout': 0.23709012935626683, 'batch_size': 64, 'lr': 4.364664774661905e-05}
+2025-04-23 02:14:30,536 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 02:14:32,496 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 02:14:32,497 - INFO - Creating sequences with window size 50...
+2025-04-23 02:14:34,240 - INFO - Created 169485 sequences. Input: torch.Size([169485, 50, 32]), Target: torch.Size([169485, 32])
+2025-04-23 02:14:34,329 - INFO - Final Dataset size: 169485 samples
+2025-04-23 02:14:34,330 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 02:14:34,542 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 02:14:34,542 - INFO - Creating sequences with window size 50...
+2025-04-23 02:14:34,774 - INFO - Created 30968 sequences. Input: torch.Size([30968, 50, 32]), Target: torch.Size([30968, 32])
+2025-04-23 02:14:34,787 - INFO - Final Dataset size: 30968 samples
+2025-04-23 02:16:15,880 - INFO - Epoch 1 | Train Loss: 0.036132 | Val Loss: 0.008295
+2025-04-23 02:17:50,948 - INFO - Epoch 2 | Train Loss: 0.010390 | Val Loss: 0.006581
+2025-04-23 02:19:21,810 - INFO - Epoch 3 | Train Loss: 0.007915 | Val Loss: 0.005661
+2025-04-23 02:20:57,595 - INFO - Epoch 4 | Train Loss: 0.006698 | Val Loss: 0.005220
+2025-04-23 02:22:35,032 - INFO - Epoch 5 | Train Loss: 0.005920 | Val Loss: 0.004733
+2025-04-23 02:24:10,689 - INFO - Epoch 6 | Train Loss: 0.005355 | Val Loss: 0.004530
+2025-04-23 02:25:46,094 - INFO - Epoch 7 | Train Loss: 0.004884 | Val Loss: 0.004476
+2025-04-23 02:27:21,141 - INFO - Epoch 8 | Train Loss: 0.004507 | Val Loss: 0.003822
+2025-04-23 02:28:56,235 - INFO - Epoch 9 | Train Loss: 0.004125 | Val Loss: 0.003620
+2025-04-23 02:30:30,923 - INFO - Epoch 10 | Train Loss: 0.003758 | Val Loss: 0.003757
+2025-04-23 02:32:07,446 - INFO - Epoch 11 | Train Loss: 0.003354 | Val Loss: 0.003575
+2025-04-23 02:33:42,081 - INFO - Epoch 12 | Train Loss: 0.002953 | Val Loss: 0.003081
+2025-04-23 02:35:21,876 - INFO - Epoch 13 | Train Loss: 0.002589 | Val Loss: 0.002165
+2025-04-23 02:37:00,372 - INFO - Epoch 14 | Train Loss: 0.002288 | Val Loss: 0.002146
+2025-04-23 02:38:34,192 - INFO - Epoch 15 | Train Loss: 0.002071 | Val Loss: 0.001755
+2025-04-23 02:38:34,507 - INFO - Trial 16 completed: val_loss=0.001755
+2025-04-23 02:38:34,787 - WARNING - Invalid combination: d_model=128, nhead=12 (not divisible)
+2025-04-23 02:38:34,853 - INFO - Trial 18: {'seq_len': 32, 'd_model': 512, 'nhead': 8, 'num_layers': 5, 'dropout': 0.4420236329399061, 'batch_size': 128, 'lr': 0.0002097958537740651}
+2025-04-23 02:38:34,854 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 02:38:38,309 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 02:38:38,310 - INFO - Creating sequences with window size 32...
+2025-04-23 02:38:39,896 - INFO - Created 169503 sequences. Input: torch.Size([169503, 32, 32]), Target: torch.Size([169503, 32])
+2025-04-23 02:38:39,996 - INFO - Final Dataset size: 169503 samples
+2025-04-23 02:38:39,997 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 02:38:40,358 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 02:38:40,358 - INFO - Creating sequences with window size 32...
+2025-04-23 02:38:40,666 - INFO - Created 30986 sequences. Input: torch.Size([30986, 32, 32]), Target: torch.Size([30986, 32])
+2025-04-23 02:38:40,682 - INFO - Final Dataset size: 30986 samples
+2025-04-23 02:39:20,197 - INFO - Epoch 1 | Train Loss: 0.034944 | Val Loss: 0.010398
+2025-04-23 02:39:58,794 - INFO - Epoch 2 | Train Loss: 0.008762 | Val Loss: 0.002957
+2025-04-23 02:40:37,810 - INFO - Epoch 3 | Train Loss: 0.003508 | Val Loss: 0.001948
+2025-04-23 02:41:17,323 - INFO - Epoch 4 | Train Loss: 0.002592 | Val Loss: 0.002224
+2025-04-23 02:41:56,627 - INFO - Epoch 5 | Train Loss: 0.002341 | Val Loss: 0.001840
+2025-04-23 02:42:35,334 - INFO - Epoch 6 | Train Loss: 0.002141 | Val Loss: 0.001766
+2025-04-23 02:43:13,595 - INFO - Epoch 7 | Train Loss: 0.002035 | Val Loss: 0.002296
+2025-04-23 02:43:52,687 - INFO - Epoch 8 | Train Loss: 0.001938 | Val Loss: 0.002504
+2025-04-23 02:44:31,449 - INFO - Epoch 9 | Train Loss: 0.001878 | Val Loss: 0.002257
+2025-04-23 02:45:09,347 - INFO - Epoch 10 | Train Loss: 0.001603 | Val Loss: 0.002217
+2025-04-23 02:45:09,347 - INFO - Early stopping triggered after 10 epochs
+2025-04-23 02:45:09,546 - INFO - Trial 18 completed: val_loss=0.001766
+2025-04-23 02:45:09,866 - INFO - Trial 19: {'seq_len': 8, 'd_model': 512, 'nhead': 4, 'num_layers': 6, 'dropout': 0.34683480186314497, 'batch_size': 128, 'lr': 1.0115986064397946e-05}
+2025-04-23 02:45:09,866 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 02:45:13,342 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 02:45:13,342 - INFO - Creating sequences with window size 8...
+2025-04-23 02:45:14,718 - INFO - Created 169527 sequences. Input: torch.Size([169527, 8, 32]), Target: torch.Size([169527, 32])
+2025-04-23 02:45:14,827 - INFO - Final Dataset size: 169527 samples
+2025-04-23 02:45:14,828 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 02:45:15,179 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 02:45:15,180 - INFO - Creating sequences with window size 8...
+2025-04-23 02:45:15,293 - INFO - Created 31010 sequences. Input: torch.Size([31010, 8, 32]), Target: torch.Size([31010, 32])
+2025-04-23 02:45:15,309 - INFO - Final Dataset size: 31010 samples
+2025-04-23 02:45:47,115 - INFO - Epoch 1 | Train Loss: 0.136369 | Val Loss: 0.020519
+2025-04-23 02:46:18,610 - INFO - Epoch 2 | Train Loss: 0.035102 | Val Loss: 0.010385
+2025-04-23 02:46:49,878 - INFO - Epoch 3 | Train Loss: 0.026045 | Val Loss: 0.007899
+2025-04-23 02:47:22,605 - INFO - Epoch 4 | Train Loss: 0.021454 | Val Loss: 0.006883
+2025-04-23 02:47:54,327 - INFO - Epoch 5 | Train Loss: 0.018421 | Val Loss: 0.006110
+2025-04-23 02:48:26,574 - INFO - Epoch 6 | Train Loss: 0.016238 | Val Loss: 0.005733
+2025-04-23 02:48:58,340 - INFO - Epoch 7 | Train Loss: 0.014603 | Val Loss: 0.005476
+2025-04-23 02:49:30,507 - INFO - Epoch 8 | Train Loss: 0.013318 | Val Loss: 0.005418
+2025-04-23 02:50:04,586 - INFO - Epoch 9 | Train Loss: 0.012270 | Val Loss: 0.005083
+2025-04-23 02:50:37,462 - INFO - Epoch 10 | Train Loss: 0.011387 | Val Loss: 0.004772
+2025-04-23 02:51:09,968 - INFO - Epoch 11 | Train Loss: 0.010618 | Val Loss: 0.004899
+2025-04-23 02:51:43,198 - INFO - Epoch 12 | Train Loss: 0.009941 | Val Loss: 0.004256
+2025-04-23 02:52:14,279 - INFO - Epoch 13 | Train Loss: 0.009310 | Val Loss: 0.004123
+2025-04-23 02:52:47,041 - INFO - Epoch 14 | Train Loss: 0.008726 | Val Loss: 0.004093
+2025-04-23 02:53:18,945 - INFO - Epoch 15 | Train Loss: 0.008171 | Val Loss: 0.003934
+2025-04-23 02:53:19,103 - INFO - Trial 19 completed: val_loss=0.003934
+2025-04-23 02:53:19,199 - INFO - Trial 20: {'seq_len': 39, 'd_model': 128, 'nhead': 16, 'num_layers': 7, 'dropout': 0.44286815346732367, 'batch_size': 64, 'lr': 0.00014017216726127656}
+2025-04-23 02:53:19,200 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 02:53:22,648 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 02:53:22,649 - INFO - Creating sequences with window size 39...
+2025-04-23 02:53:24,226 - INFO - Created 169496 sequences. Input: torch.Size([169496, 39, 32]), Target: torch.Size([169496, 32])
+2025-04-23 02:53:24,336 - INFO - Final Dataset size: 169496 samples
+2025-04-23 02:53:24,336 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 02:53:24,702 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 02:53:24,703 - INFO - Creating sequences with window size 39...
+2025-04-23 02:53:25,028 - INFO - Created 30979 sequences. Input: torch.Size([30979, 39, 32]), Target: torch.Size([30979, 32])
+2025-04-23 02:53:25,044 - INFO - Final Dataset size: 30979 samples
+2025-04-23 02:54:36,092 - INFO - Epoch 1 | Train Loss: 0.113371 | Val Loss: 0.021241
+2025-04-23 02:55:41,154 - INFO - Epoch 2 | Train Loss: 0.024824 | Val Loss: 0.008450
+2025-04-23 02:56:49,050 - INFO - Epoch 3 | Train Loss: 0.009308 | Val Loss: 0.004570
+2025-04-23 02:57:56,124 - INFO - Epoch 4 | Train Loss: 0.003841 | Val Loss: 0.002428
+2025-04-23 02:59:00,981 - INFO - Epoch 5 | Train Loss: 0.002497 | Val Loss: 0.001787
+2025-04-23 03:00:08,265 - INFO - Epoch 6 | Train Loss: 0.002116 | Val Loss: 0.001940
+2025-04-23 03:01:18,631 - INFO - Epoch 7 | Train Loss: 0.001949 | Val Loss: 0.001657
+2025-04-23 03:02:25,648 - INFO - Epoch 8 | Train Loss: 0.001860 | Val Loss: 0.001536
+2025-04-23 03:03:35,760 - INFO - Epoch 9 | Train Loss: 0.001799 | Val Loss: 0.003179
+2025-04-23 03:04:43,775 - INFO - Epoch 10 | Train Loss: 0.001751 | Val Loss: 0.001462
+2025-04-23 03:05:49,124 - INFO - Epoch 11 | Train Loss: 0.001696 | Val Loss: 0.001476
+2025-04-23 03:06:56,002 - INFO - Epoch 12 | Train Loss: 0.001662 | Val Loss: 0.001542
+2025-04-23 03:08:01,577 - INFO - Epoch 13 | Train Loss: 0.001644 | Val Loss: 0.001416
+2025-04-23 03:09:13,982 - INFO - Epoch 14 | Train Loss: 0.001617 | Val Loss: 0.001653
+2025-04-23 03:10:30,613 - INFO - Epoch 15 | Train Loss: 0.001598 | Val Loss: 0.001358
+2025-04-23 03:10:30,663 - INFO - Trial 20 completed: val_loss=0.001358
+2025-04-23 03:10:30,883 - INFO - Trial 21: {'seq_len': 39, 'd_model': 128, 'nhead': 16, 'num_layers': 7, 'dropout': 0.4603497312742872, 'batch_size': 64, 'lr': 0.00015052072102918814}
+2025-04-23 03:10:30,883 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 03:10:33,044 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 03:10:33,045 - INFO - Creating sequences with window size 39...
+2025-04-23 03:10:34,707 - INFO - Created 169496 sequences. Input: torch.Size([169496, 39, 32]), Target: torch.Size([169496, 32])
+2025-04-23 03:10:34,804 - INFO - Final Dataset size: 169496 samples
+2025-04-23 03:10:34,804 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 03:10:35,027 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 03:10:35,027 - INFO - Creating sequences with window size 39...
+2025-04-23 03:10:35,222 - INFO - Created 30979 sequences. Input: torch.Size([30979, 39, 32]), Target: torch.Size([30979, 32])
+2025-04-23 03:10:35,235 - INFO - Final Dataset size: 30979 samples
+2025-04-23 03:11:48,134 - INFO - Epoch 1 | Train Loss: 0.112817 | Val Loss: 0.021933
+2025-04-23 03:12:57,913 - INFO - Epoch 2 | Train Loss: 0.021931 | Val Loss: 0.006608
+2025-04-23 03:14:07,680 - INFO - Epoch 3 | Train Loss: 0.007148 | Val Loss: 0.003487
+2025-04-23 03:15:18,206 - INFO - Epoch 4 | Train Loss: 0.003148 | Val Loss: 0.001903
+2025-04-23 03:16:23,778 - INFO - Epoch 5 | Train Loss: 0.002345 | Val Loss: 0.001532
+2025-04-23 03:17:27,738 - INFO - Epoch 6 | Train Loss: 0.002094 | Val Loss: 0.001605
+2025-04-23 03:18:34,167 - INFO - Epoch 7 | Train Loss: 0.001951 | Val Loss: 0.001653
+2025-04-23 03:19:38,892 - INFO - Epoch 8 | Train Loss: 0.001857 | Val Loss: 0.002673
+2025-04-23 03:20:43,805 - INFO - Epoch 9 | Train Loss: 0.001675 | Val Loss: 0.001318
+2025-04-23 03:21:47,834 - INFO - Epoch 10 | Train Loss: 0.001644 | Val Loss: 0.001648
+2025-04-23 03:22:55,084 - INFO - Epoch 11 | Train Loss: 0.001616 | Val Loss: 0.001393
+2025-04-23 03:23:58,608 - INFO - Epoch 12 | Train Loss: 0.001594 | Val Loss: 0.001249
+2025-04-23 03:25:13,339 - INFO - Epoch 13 | Train Loss: 0.001577 | Val Loss: 0.001273
+2025-04-23 03:26:28,850 - INFO - Epoch 14 | Train Loss: 0.001558 | Val Loss: 0.001374
+2025-04-23 03:27:38,643 - INFO - Epoch 15 | Train Loss: 0.001546 | Val Loss: 0.001317
+2025-04-23 03:27:38,707 - INFO - Trial 21 completed: val_loss=0.001249
+2025-04-23 03:27:38,960 - INFO - Trial 22: {'seq_len': 43, 'd_model': 128, 'nhead': 16, 'num_layers': 7, 'dropout': 0.44365747578581133, 'batch_size': 64, 'lr': 0.0003992103823154887}
+2025-04-23 03:27:38,961 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 03:27:42,309 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 03:27:42,310 - INFO - Creating sequences with window size 43...
+2025-04-23 03:27:44,321 - INFO - Created 169492 sequences. Input: torch.Size([169492, 43, 32]), Target: torch.Size([169492, 32])
+2025-04-23 03:27:44,461 - INFO - Final Dataset size: 169492 samples
+2025-04-23 03:27:44,462 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 03:27:44,801 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 03:27:44,801 - INFO - Creating sequences with window size 43...
+2025-04-23 03:27:45,457 - INFO - Created 30975 sequences. Input: torch.Size([30975, 43, 32]), Target: torch.Size([30975, 32])
+2025-04-23 03:27:45,488 - INFO - Final Dataset size: 30975 samples
+2025-04-23 03:29:01,401 - INFO - Epoch 1 | Train Loss: 0.076378 | Val Loss: 0.009225
+2025-04-23 03:30:12,111 - INFO - Epoch 2 | Train Loss: 0.006726 | Val Loss: 0.004060
+2025-04-23 03:31:28,319 - INFO - Epoch 3 | Train Loss: 0.002736 | Val Loss: 0.002002
+2025-04-23 03:32:38,394 - INFO - Epoch 4 | Train Loss: 0.002274 | Val Loss: 0.001793
+2025-04-23 03:33:43,402 - INFO - Epoch 5 | Train Loss: 0.002086 | Val Loss: 0.001689
+2025-04-23 03:34:52,182 - INFO - Epoch 6 | Train Loss: 0.001986 | Val Loss: 0.001552
+2025-04-23 03:35:59,476 - INFO - Epoch 7 | Train Loss: 0.001924 | Val Loss: 0.001346
+2025-04-23 03:37:05,568 - INFO - Epoch 8 | Train Loss: 0.001855 | Val Loss: 0.001500
+2025-04-23 03:38:12,731 - INFO - Epoch 9 | Train Loss: 0.001806 | Val Loss: 0.001357
+2025-04-23 03:39:19,992 - INFO - Epoch 10 | Train Loss: 0.001786 | Val Loss: 0.001472
+2025-04-23 03:40:24,492 - INFO - Epoch 11 | Train Loss: 0.001560 | Val Loss: 0.001302
+2025-04-23 03:41:29,717 - INFO - Epoch 12 | Train Loss: 0.001557 | Val Loss: 0.001304
+2025-04-23 03:42:34,493 - INFO - Epoch 13 | Train Loss: 0.001538 | Val Loss: 0.001229
+2025-04-23 03:43:40,671 - INFO - Epoch 14 | Train Loss: 0.001528 | Val Loss: 0.001309
+2025-04-23 03:44:47,445 - INFO - Epoch 15 | Train Loss: 0.001519 | Val Loss: 0.001873
+2025-04-23 03:44:47,501 - INFO - Trial 22 completed: val_loss=0.001229
+2025-04-23 03:44:47,814 - INFO - Trial 23: {'seq_len': 46, 'd_model': 128, 'nhead': 16, 'num_layers': 7, 'dropout': 0.46644486816037806, 'batch_size': 64, 'lr': 0.00047235642304877456}
+2025-04-23 03:44:47,814 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 03:44:51,440 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 03:44:51,441 - INFO - Creating sequences with window size 46...
+2025-04-23 03:44:53,891 - INFO - Created 169489 sequences. Input: torch.Size([169489, 46, 32]), Target: torch.Size([169489, 32])
+2025-04-23 03:44:54,008 - INFO - Final Dataset size: 169489 samples
+2025-04-23 03:44:54,009 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 03:44:54,374 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 03:44:54,382 - INFO - Creating sequences with window size 46...
+2025-04-23 03:44:54,709 - INFO - Created 30972 sequences. Input: torch.Size([30972, 46, 32]), Target: torch.Size([30972, 32])
+2025-04-23 03:44:54,741 - INFO - Final Dataset size: 30972 samples
+2025-04-23 03:46:02,287 - INFO - Epoch 1 | Train Loss: 0.079915 | Val Loss: 0.006862
+2025-04-23 03:47:11,859 - INFO - Epoch 2 | Train Loss: 0.004662 | Val Loss: 0.002785
+2025-04-23 03:48:19,372 - INFO - Epoch 3 | Train Loss: 0.002582 | Val Loss: 0.002252
+2025-04-23 03:49:30,632 - INFO - Epoch 4 | Train Loss: 0.002276 | Val Loss: 0.002057
+2025-04-23 03:50:36,999 - INFO - Epoch 5 | Train Loss: 0.002095 | Val Loss: 0.002483
+2025-04-23 03:51:41,181 - INFO - Epoch 6 | Train Loss: 0.001994 | Val Loss: 0.002267
+2025-04-23 03:52:48,232 - INFO - Epoch 7 | Train Loss: 0.001898 | Val Loss: 0.002316
+2025-04-23 03:53:55,934 - INFO - Epoch 8 | Train Loss: 0.001651 | Val Loss: 0.002055
+2025-04-23 03:55:01,489 - INFO - Epoch 9 | Train Loss: 0.001624 | Val Loss: 0.002542
+2025-04-23 03:56:08,842 - INFO - Epoch 10 | Train Loss: 0.001603 | Val Loss: 0.002109
+2025-04-23 03:57:15,361 - INFO - Epoch 11 | Train Loss: 0.001584 | Val Loss: 0.001832
+2025-04-23 03:58:20,749 - INFO - Epoch 12 | Train Loss: 0.001572 | Val Loss: 0.002088
+2025-04-23 03:59:35,027 - INFO - Epoch 13 | Train Loss: 0.001555 | Val Loss: 0.002016
+2025-04-23 04:00:43,527 - INFO - Epoch 14 | Train Loss: 0.001544 | Val Loss: 0.002324
+2025-04-23 04:01:48,936 - INFO - Epoch 15 | Train Loss: 0.001434 | Val Loss: 0.001872
+2025-04-23 04:01:48,936 - INFO - Early stopping triggered after 15 epochs
+2025-04-23 04:01:49,001 - INFO - Trial 23 completed: val_loss=0.001832
+2025-04-23 04:01:49,419 - INFO - Trial 24: {'seq_len': 36, 'd_model': 128, 'nhead': 16, 'num_layers': 4, 'dropout': 0.41475818059555114, 'batch_size': 64, 'lr': 0.0004039613328453475}
+2025-04-23 04:01:49,419 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 04:01:52,965 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 04:01:52,966 - INFO - Creating sequences with window size 36...
+2025-04-23 04:01:55,347 - INFO - Created 169499 sequences. Input: torch.Size([169499, 36, 32]), Target: torch.Size([169499, 32])
+2025-04-23 04:01:55,455 - INFO - Final Dataset size: 169499 samples
+2025-04-23 04:01:55,456 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 04:01:55,833 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 04:01:55,833 - INFO - Creating sequences with window size 36...
+2025-04-23 04:01:56,040 - INFO - Created 30982 sequences. Input: torch.Size([30982, 36, 32]), Target: torch.Size([30982, 32])
+2025-04-23 04:01:56,056 - INFO - Final Dataset size: 30982 samples
+2025-04-23 04:02:43,608 - INFO - Epoch 1 | Train Loss: 0.042546 | Val Loss: 0.002944
+2025-04-23 04:03:32,510 - INFO - Epoch 2 | Train Loss: 0.002894 | Val Loss: 0.002331
+2025-04-23 04:04:20,038 - INFO - Epoch 3 | Train Loss: 0.002289 | Val Loss: 0.001970
+2025-04-23 04:05:06,529 - INFO - Epoch 4 | Train Loss: 0.002094 | Val Loss: 0.001715
+2025-04-23 04:05:52,198 - INFO - Epoch 5 | Train Loss: 0.001954 | Val Loss: 0.002042
+2025-04-23 04:06:40,130 - INFO - Epoch 6 | Train Loss: 0.001896 | Val Loss: 0.001825
+2025-04-23 04:07:27,380 - INFO - Epoch 7 | Train Loss: 0.001830 | Val Loss: 0.001556
+2025-04-23 04:08:14,531 - INFO - Epoch 8 | Train Loss: 0.001807 | Val Loss: 0.001617
+2025-04-23 04:08:59,647 - INFO - Epoch 9 | Train Loss: 0.001767 | Val Loss: 0.001701
+2025-04-23 04:09:47,308 - INFO - Epoch 10 | Train Loss: 0.001744 | Val Loss: 0.001832
+2025-04-23 04:10:31,621 - INFO - Epoch 11 | Train Loss: 0.001565 | Val Loss: 0.001472
+2025-04-23 04:11:18,989 - INFO - Epoch 12 | Train Loss: 0.001561 | Val Loss: 0.001536
+2025-04-23 04:12:11,620 - INFO - Epoch 13 | Train Loss: 0.001549 | Val Loss: 0.001464
+2025-04-23 04:12:58,301 - INFO - Epoch 14 | Train Loss: 0.001538 | Val Loss: 0.001680
+2025-04-23 04:13:46,082 - INFO - Epoch 15 | Train Loss: 0.001529 | Val Loss: 0.001485
+2025-04-23 04:13:46,120 - INFO - Trial 24 completed: val_loss=0.001464
+2025-04-23 04:13:46,392 - INFO - Trial 25: {'seq_len': 44, 'd_model': 128, 'nhead': 16, 'num_layers': 6, 'dropout': 0.46143123177272377, 'batch_size': 256, 'lr': 4.559643365983676e-05}
+2025-04-23 04:13:46,393 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 04:13:48,499 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 04:13:48,501 - INFO - Creating sequences with window size 44...
+2025-04-23 04:13:51,118 - INFO - Created 169491 sequences. Input: torch.Size([169491, 44, 32]), Target: torch.Size([169491, 32])
+2025-04-23 04:13:51,215 - INFO - Final Dataset size: 169491 samples
+2025-04-23 04:13:51,216 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 04:13:51,426 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 04:13:51,433 - INFO - Creating sequences with window size 44...
+2025-04-23 04:13:51,649 - INFO - Created 30974 sequences. Input: torch.Size([30974, 44, 32]), Target: torch.Size([30974, 32])
+2025-04-23 04:13:51,663 - INFO - Final Dataset size: 30974 samples
+2025-04-23 04:14:18,042 - INFO - Epoch 1 | Train Loss: 0.369043 | Val Loss: 0.180013
+2025-04-23 04:14:44,225 - INFO - Epoch 2 | Train Loss: 0.121899 | Val Loss: 0.062054
+2025-04-23 04:15:10,633 - INFO - Epoch 3 | Train Loss: 0.073121 | Val Loss: 0.033866
+2025-04-23 04:15:37,226 - INFO - Epoch 4 | Train Loss: 0.053085 | Val Loss: 0.023650
+2025-04-23 04:16:02,870 - INFO - Epoch 5 | Train Loss: 0.040897 | Val Loss: 0.017873
+2025-04-23 04:16:28,579 - INFO - Epoch 6 | Train Loss: 0.032475 | Val Loss: 0.014087
+2025-04-23 04:16:54,032 - INFO - Epoch 7 | Train Loss: 0.026154 | Val Loss: 0.011687
+2025-04-23 04:17:19,654 - INFO - Epoch 8 | Train Loss: 0.021186 | Val Loss: 0.009721
+2025-04-23 04:17:45,395 - INFO - Epoch 9 | Train Loss: 0.017187 | Val Loss: 0.008173
+2025-04-23 04:18:10,984 - INFO - Epoch 10 | Train Loss: 0.013914 | Val Loss: 0.007222
+2025-04-23 04:18:35,847 - INFO - Epoch 11 | Train Loss: 0.011259 | Val Loss: 0.006200
+2025-04-23 04:19:00,408 - INFO - Epoch 12 | Train Loss: 0.009125 | Val Loss: 0.005129
+2025-04-23 04:19:26,163 - INFO - Epoch 13 | Train Loss: 0.007420 | Val Loss: 0.004372
+2025-04-23 04:19:51,703 - INFO - Epoch 14 | Train Loss: 0.006088 | Val Loss: 0.004350
+2025-04-23 04:20:17,274 - INFO - Epoch 15 | Train Loss: 0.005053 | Val Loss: 0.004348
+2025-04-23 04:20:17,314 - INFO - Trial 25 completed: val_loss=0.004348
+2025-04-23 04:20:17,479 - INFO - Optimization completed!
+2025-04-23 04:20:17,484 - INFO - Best trial: #12
+2025-04-23 04:20:17,487 - INFO - Best validation loss: 0.001154
+2025-04-23 04:20:17,487 - INFO - Best hyperparameters:
+2025-04-23 04:20:17,491 - INFO -     seq_len: 37
+2025-04-23 04:20:17,491 - INFO -     d_model: 512
+2025-04-23 04:20:17,491 - INFO -     nhead: 16
+2025-04-23 04:20:17,491 - INFO -     num_layers: 5
+2025-04-23 04:20:17,491 - INFO -     dropout: 0.45841776237280063
+2025-04-23 04:20:17,491 - INFO -     batch_size: 128
+2025-04-23 04:20:17,491 - INFO -     lr: 5.180287841960642e-05
+2025-04-23 04:20:18,610 - INFO - Training final model with best hyperparameters
+2025-04-23 04:20:18,610 - INFO - Loading 80 files from /scratch/vmm5481/CV/dataset/train
+2025-04-23 04:20:20,509 - INFO - All latent vectors combined. Shape: torch.Size([169535, 32])
+2025-04-23 04:20:20,510 - INFO - Creating sequences with window size 37...
+2025-04-23 04:20:22,389 - INFO - Created 169498 sequences. Input: torch.Size([169498, 37, 32]), Target: torch.Size([169498, 32])
+2025-04-23 04:20:22,487 - INFO - Final Dataset size: 169498 samples
+2025-04-23 04:20:22,488 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/vali
+2025-04-23 04:20:22,702 - INFO - All latent vectors combined. Shape: torch.Size([31018, 32])
+2025-04-23 04:20:22,702 - INFO - Creating sequences with window size 37...
+2025-04-23 04:20:22,906 - INFO - Created 30981 sequences. Input: torch.Size([30981, 37, 32]), Target: torch.Size([30981, 32])
+2025-04-23 04:20:22,920 - INFO - Final Dataset size: 30981 samples
+2025-04-23 04:20:22,920 - INFO - Loading 10 files from /scratch/vmm5481/CV/dataset/test
+2025-04-23 04:20:23,111 - INFO - All latent vectors combined. Shape: torch.Size([12815, 32])
+2025-04-23 04:20:23,112 - INFO - Creating sequences with window size 37...
+2025-04-23 04:20:23,190 - INFO - Created 12778 sequences. Input: torch.Size([12778, 37, 32]), Target: torch.Size([12778, 32])
+2025-04-23 04:20:23,198 - INFO - Final Dataset size: 12778 samples
+2025-04-23 04:21:05,842 - INFO - Epoch 1 | Train Loss: 0.068225 | Val Loss: 0.010045
+2025-04-23 04:21:49,760 - INFO - Epoch 2 | Train Loss: 0.018795 | Val Loss: 0.007263
+2025-04-23 04:22:32,860 - INFO - Epoch 3 | Train Loss: 0.012713 | Val Loss: 0.005355
+2025-04-23 04:23:15,105 - INFO - Epoch 4 | Train Loss: 0.008651 | Val Loss: 0.004746
+2025-04-23 04:23:57,186 - INFO - Epoch 5 | Train Loss: 0.005652 | Val Loss: 0.002822
+2025-04-23 04:24:41,334 - INFO - Epoch 6 | Train Loss: 0.003906 | Val Loss: 0.001929
+2025-04-23 04:25:23,438 - INFO - Epoch 7 | Train Loss: 0.003016 | Val Loss: 0.001717
+2025-04-23 04:26:05,200 - INFO - Epoch 8 | Train Loss: 0.002536 | Val Loss: 0.001435
+2025-04-23 04:26:47,418 - INFO - Epoch 9 | Train Loss: 0.002259 | Val Loss: 0.001561
+2025-04-23 04:27:30,295 - INFO - Epoch 10 | Train Loss: 0.002075 | Val Loss: 0.001531
+2025-04-23 04:28:13,228 - INFO - Epoch 11 | Train Loss: 0.001954 | Val Loss: 0.001345
+2025-04-23 04:28:56,134 - INFO - Epoch 12 | Train Loss: 0.001868 | Val Loss: 0.001355
+2025-04-23 04:29:38,331 - INFO - Epoch 13 | Train Loss: 0.001799 | Val Loss: 0.001297
+2025-04-23 04:30:21,610 - INFO - Epoch 14 | Train Loss: 0.001748 | Val Loss: 0.001254
+2025-04-23 04:31:04,987 - INFO - Epoch 15 | Train Loss: 0.001706 | Val Loss: 0.001351
+2025-04-23 04:31:48,869 - INFO - Epoch 16 | Train Loss: 0.001676 | Val Loss: 0.001183
+2025-04-23 04:32:31,173 - INFO - Epoch 17 | Train Loss: 0.001643 | Val Loss: 0.001220
+2025-04-23 04:33:12,673 - INFO - Epoch 18 | Train Loss: 0.001620 | Val Loss: 0.001188
+2025-04-23 04:33:55,026 - INFO - Epoch 19 | Train Loss: 0.001602 | Val Loss: 0.001135
+2025-04-23 04:34:36,531 - INFO - Epoch 20 | Train Loss: 0.001583 | Val Loss: 0.001150
+2025-04-23 04:35:18,624 - INFO - Epoch 21 | Train Loss: 0.001564 | Val Loss: 0.001356
+2025-04-23 04:36:01,029 - INFO - Epoch 22 | Train Loss: 0.001548 | Val Loss: 0.001275
+2025-04-23 04:36:42,761 - INFO - Epoch 23 | Train Loss: 0.001534 | Val Loss: 0.001184
+2025-04-23 04:37:25,282 - INFO - Epoch 24 | Train Loss: 0.001518 | Val Loss: 0.001258
+2025-04-23 04:38:07,624 - INFO - Epoch 25 | Train Loss: 0.001503 | Val Loss: 0.001317
+2025-04-23 04:38:50,062 - INFO - Epoch 26 | Train Loss: 0.001414 | Val Loss: 0.001145
+2025-04-23 04:39:31,939 - INFO - Epoch 27 | Train Loss: 0.001401 | Val Loss: 0.001196
+2025-04-23 04:40:14,187 - INFO - Epoch 28 | Train Loss: 0.001399 | Val Loss: 0.001138
+2025-04-23 04:40:56,419 - INFO - Epoch 29 | Train Loss: 0.001397 | Val Loss: 0.001172
+2025-04-23 04:40:56,420 - INFO - Early stopping triggered after 29 epochs
+2025-04-23 04:40:59,688 - INFO - Final test loss: 0.001799
+2025-04-23 04:41:01,982 - INFO - Saved visualization plots to ./tuning_results/plots
+2025-04-23 04:41:01,982 - INFO - Hyperparameter tuning completed successfully!
