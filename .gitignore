@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+pose_env/
+env/
+venv/
+__MACOSX
+
+# Data and large model files
+*.npz
+*.pkl
+*.zip
+*.tar.gz
+*.h5
+*.pt
+
+# Dataset and output folders
+dataset/
+tuning_results/
+VPoserModelFiles/
+*.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# System files
+.DS_Store
